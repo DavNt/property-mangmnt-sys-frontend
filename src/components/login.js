@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Personic from "../resources/img/person.png"
 import Keyic from "../resources/img/key.png"
 import "../resources/css/login.css"
 
 export default function Login(props){
-  const history = useNavigate();
+  const history = useHistory();
 
   // const required = value => {
   //   if (!value) {
@@ -30,7 +30,7 @@ export default function Login(props){
     e.preventDefault();
 
     if(username === 'user' && password === 'user'){
-      history("/dashboard");
+      history.push("/dashboard");
     } else{
       return (
         <div className="alert alert-danger" role="alert">
