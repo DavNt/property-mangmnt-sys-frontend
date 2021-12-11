@@ -30,7 +30,10 @@ export default function Login(props){
     e.preventDefault();
 
     if(username === 'user' && password === 'user'){
+      localStorage.setItem("user", "user");
+
       history.push("/dashboard");
+      window.location.reload();
     } else{
       return (
         <div className="alert alert-danger" role="alert">
@@ -89,7 +92,7 @@ export default function Login(props){
           </div>
           </form>
         </div>
-        <div className="col-7 ">
+        <div className="col-6 ">
           <h1 className="greenc fw-bolder hightopm">
             PROPERTY <br/><br/>MANAGEMENT <br/><br/>SYSTEM
           </h1>

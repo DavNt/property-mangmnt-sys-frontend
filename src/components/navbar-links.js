@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function NavbarLinks(){
+export default function NavbarLinks(props){
   return(
     <>
       {/* <div className="row"> */}
@@ -66,10 +66,17 @@ export default function NavbarLinks(){
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/"}>
+                <button 
+                  className="nav-link btn" 
+                  onClick={() =>{
+                    localStorage.removeItem("user")
+                    window.location.reload();
+                  }}
+                  // href=""
+                >
                   <span data-feather=""></span>
                   Sign out
-                </Link>
+                </button>
               </li>
             </ul>
 
