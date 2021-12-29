@@ -7,18 +7,18 @@ export default function NavbarLinks(props){
       {/* <div className="row"> */}
         <nav 
           id="sidebarMenu" 
-          className="col-md-3 col-lg-2 d-md-block navlinkbg fullh sidebar collapse"
+          className="col-md-3 col-lg-2 d-md-block navlinkbg sidebar collapse"
         >
-          <div className="position-sticky pt-5 fullh">
+          <div className="position-sticky pt-5 ">
             <ul className="nav flex-column greenc">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to={"#"}>
+                <Link className="nav-link active" aria-current="page" to={"/dashboard"}>
                   <span data-feather="home"></span>
                   Dashboard
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link  greenc" to={"#"}>
+                <Link className="nav-link  greenc" to={"/property-list"}>
                   <span data-feather=""></span>
                   Properties
                 </Link>
@@ -72,7 +72,6 @@ export default function NavbarLinks(props){
                     localStorage.removeItem("user")
                     window.location.reload();
                   }}
-                  // href=""
                 >
                   <span data-feather=""></span>
                   Sign out

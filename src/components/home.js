@@ -14,7 +14,7 @@ export default function Home(){
     <>
     {/* <div className="col-md-9"> */}
       <div className="row">
-        <Link className="col-md-3 guidelink" to={''}>
+        <Link className="col-md-3 guidelink" to={"/property-list"}>
           <img
             className="img-responsive hicon"
             src={Propic}
