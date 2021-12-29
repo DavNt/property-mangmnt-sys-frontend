@@ -24,7 +24,7 @@ export default function NavbarLinks(props){
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"#"}>
+                <Link className="nav-link" to={"/tenant-list"}>
                   <span data-feather=""></span>
                   Tenants
                 </Link>

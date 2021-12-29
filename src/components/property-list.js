@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function PropertyList(){
-  //to be replaced with database data link
+  //mockdata to be replaced with database data link
   const [mockData, setMockData] = useState();
   const [searchtxt, setSearchtxt] = useState();
 

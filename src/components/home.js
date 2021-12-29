@@ -22,7 +22,7 @@ export default function Home(){
           />
           <p className="text-center fw-bold greenc">Properties</p>
         </Link>
-        <Link className="col-md-3 guidelink" to={''}>
+        <Link className="col-md-3 guidelink" to={"/tenant-list"}>
           <img
             className="img-responsive hicon "
             src={Tenantic}

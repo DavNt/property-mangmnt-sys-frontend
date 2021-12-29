@@ -10,6 +10,8 @@ import NavbarLinks from './components/navbar-links';
 import Dashboard from './components/dashboard';
 import PropertyAdd from './components/property-add';
 import PropertyList from './components/property-list';
+import TenantsAdd from './components/tenants-add';
+import TenantsList from './components/tenants-list';
 
 function App() {
   const [islogedin, setIslogedin] = useState(''); //to be replaced with auth
@@ -34,7 +36,8 @@ function App() {
             <Route path={"/dashboard"} component={Dashboard}/>
             <Route path={"/property-add"} component={PropertyAdd}/>
             <Route path={"/property-list"} component={PropertyList}/>
-
+            <Route path={"/tenant-add"} component={TenantsAdd}/>
+            <Route path={"/tenant-list"} component={TenantsList}/>
           </Switch>
         </div>
       </div>
