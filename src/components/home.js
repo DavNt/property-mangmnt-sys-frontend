@@ -30,7 +30,7 @@ export default function Home(){
           />
           <p className="text-center fw-bold greenc">Tenants</p>
         </Link>
-        <Link className="col-md-3 guidelink" to={''}>
+        <Link className="col-md-3 guidelink" to={"/accounts-sec"}>
           <img
             className="img-responsive hicon"
             src={Accic}
@@ -38,7 +38,7 @@ export default function Home(){
           />
           <p className="text-center fw-bold greenc">Accounting</p>
         </Link>
-        <Link className="col-md-3 guidelink" to={''}>
+        <Link className="col-md-3 guidelink" to={"/creditors"}>
           <img
             className="img-responsive hicon"
             src={Creditic}

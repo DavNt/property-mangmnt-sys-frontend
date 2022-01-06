@@ -12,6 +12,9 @@ import PropertyAdd from './components/property-add';
 import PropertyList from './components/property-list';
 import TenantsAdd from './components/tenants-add';
 import TenantsList from './components/tenants-list';
+import AccountsSection from './components/accounts-sec';
+import RentPayment from './components/rent-pay';
+import CreditSection from './components/credit-control';
 
 function App() {
   const [islogedin, setIslogedin] = useState(''); //to be replaced with auth
@@ -38,6 +41,9 @@ function App() {
             <Route path={"/property-list"} component={PropertyList}/>
             <Route path={"/tenant-add"} component={TenantsAdd}/>
             <Route path={"/tenant-list"} component={TenantsList}/>
+            <Route path={"/accounts-sec"} component={AccountsSection}/>
+            <Route path={"/rent-pay"} component={RentPayment}/>
+            <Route path={"/creditors"} component={CreditSection}/>
           </Switch>
         </div>
       </div>

@@ -17,43 +17,43 @@ export default function NavbarLinks(props){
                   Dashboard
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mt-2">
                 <Link className="nav-link  greenc" to={"/property-list"}>
                   <span data-feather=""></span>
                   Properties
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mt-2">
                 <Link className="nav-link" to={"/tenant-list"}>
                   <span data-feather=""></span>
                   Tenants
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"#"}>
+              <li className="nav-item mt-2">
+                <Link className="nav-link" to={"/accounts-sec"}>
                   <span data-feather=""></span>
                   Accounting
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mt-2">
                 <Link className="nav-link" to={"#"}>
                   <span data-feather=""></span>
                   Reports
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mt-2">
                 <Link className="nav-link" to={"#"}>
                   <span data-feather=""></span>
-                  Send E-mail
+                  Send E-mail/SMS
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item my-2">
                 <Link className="nav-link" to={"#"}>
                   <span data-feather=""></span>
-                  Send SMS
+                  .
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item my-2">
                 <Link className="nav-link" to={"#"}>
                   <span data-feather=""></span>
                   FAQ
@@ -65,7 +65,7 @@ export default function NavbarLinks(props){
                   Users
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item my-4">
                 <button 
                   className="nav-link btn" 
                   onClick={() =>{
@@ -76,6 +76,12 @@ export default function NavbarLinks(props){
                   <span data-feather=""></span>
                   Sign out
                 </button>
+              </li>
+              <li className="nav-item my-3">
+                <Link className="nav-link" to={"#"}>
+                  <span data-feather=""></span>
+                  .
+                </Link>
               </li>
             </ul>
 
