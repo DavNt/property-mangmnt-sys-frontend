@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+// import PropertyDataService from '../services/property.service';
 
 export default function PropertyAdd(){
   const [submitted, setSubmitted] = useState(false);
+  const [id, setID] = useState(null);
   const [propName, setPropName] = useState();
   const [location, setLocation] = useState();
   const [accomType, setAccomType] = useState();
@@ -16,6 +18,19 @@ export default function PropertyAdd(){
     //   address: address,
     //   area: area,
     // };
+    // PropertyDataService.create(data).then(response => {
+      
+    //     setID(response.data.id);
+    //     setPropName(response.data.title);
+    //     setLocation(response.data.description);
+    //     setAccomType(response.data.published);
+
+    //     setSubmitted(true); //set after data is passed
+      
+    //   console.log(response.data);
+    // }).catch(e => {
+    //   console.log(e);
+    // });
     //data to be used to pass information to backend with the appropriate func
     setSubmitted(true); //set after data is passed
   }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+// import PropertyDataService from '../services/property.service';
 
 export default function PropertyList(){
   //mockdata to be replaced with database data link
@@ -33,8 +34,18 @@ export default function PropertyList(){
         area: 'Mpopoma',
       },
     ]);
-  
+    
+    // retrieveProperties();
   },[])
+
+  // function retrieveProperties() {
+  //   PropertyDataService.getAll().then(response => {
+  //       setMockData(response.data);
+  //       console.log(response.data);
+  //   }).catch(e => {
+  //       console.log(e);
+  //   });
+  // }
 
   return(
     <>
