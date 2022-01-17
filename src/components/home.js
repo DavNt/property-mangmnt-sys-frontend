@@ -46,7 +46,7 @@ export default function Home(){
           />
           <p className="text-center fw-bold greenc">Credit Control Centre</p>
         </Link>
-        <Link className="col-md-3 guidelink" to={''}>
+        <Link className="col-md-3 guidelink" to={"/documents"}>
           <img
             className="img-responsive hicon"
             src={Docic}
@@ -54,7 +54,7 @@ export default function Home(){
           />
           <p className="text-center fw-bold greenc">Documents</p>
         </Link>
-        <Link className="col-md-3 guidelink" to={''}>
+        <Link className="col-md-3 guidelink" to={"/messages"}>
           <img
             className="img-responsive hicon"
             src={Mailic}
@@ -62,7 +62,7 @@ export default function Home(){
           />
           <p className="text-center fw-bold greenc">E-mail/SMS</p>
         </Link>
-        <Link className="col-md-3 guidelink" to={''}>
+        <Link className="col-md-3 guidelink" to={"/faq"}>
           <img
             className="img-responsive hicon"
             src={Faqic}
