@@ -42,15 +42,9 @@ export default function NavbarLinks(props){
                 </Link>
               </li>
               <li className="nav-item mt-2">
-                <Link className="nav-link" to={"#"}>
+                <Link className="nav-link" to={"./AddUser"}>
                   <span data-feather=""></span>
-                  Send E-mail/SMS
-                </Link>
-              </li>
-              <li className="nav-item my-2">
-                <Link className="nav-link" to={"#"}>
-                  <span data-feather=""></span>
-                  .
+                  Add User
                 </Link>
               </li>
               <li className="nav-item my-2">

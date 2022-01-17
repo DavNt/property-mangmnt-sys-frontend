@@ -16,6 +16,9 @@ import AccountsSection from './components/accounts-sec';
 import RentPayment from './components/rent-pay';
 import CreditSection from './components/credit-control';
 
+
+
+
 function App() {
   const [islogedin, setIslogedin] = useState(''); //to be replaced with auth
 
@@ -49,7 +52,7 @@ function App() {
       </div>
     </div>
     </>
-    ):<Login/>} 
+    ):<Login/> } 
     </>
   );
 }
