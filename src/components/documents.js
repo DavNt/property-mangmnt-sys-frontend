@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import FileUploading from "./fileupload";
 
 export default function Documents(){
   const [newfiles, setNewfiles] = useState(null);
 
-  function handleFile(e) {
+  function handleFile(file) {
   
     // Getting the files from the input
-    let newfiles = e.target.newfiles;
+    let newfiles = file;
     setNewfiles(newfiles);
   }
     
@@ -34,13 +35,14 @@ export default function Documents(){
   return(
     <>
     <div>
-      <h1>Select your files</h1>
+      {/* <h1>Select your files</h1>
       <input
         type="file"
         // To select multiple files
         multiple="multiple"
         onChange={(e) => handleFile(e)}
-      />
+      /> */}
+      <FileUploading handleFile={handleFile}/>
       <button className="btn btn-success" onClick={(e) => handleUpload(e)}>
         Upload Files
       </button>
