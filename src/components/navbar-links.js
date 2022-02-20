@@ -5,8 +5,8 @@ export default function NavbarLinks(props){
   return(
     <>
       {/* <div className="row"> */}
-        <nav 
-          id="sidebarMenu" 
+        <nav
+          id="sidebarMenu"
           className="col-md-3 col-lg-2 d-md-block navlinkbg sidebar collapse"
         >
           <div className="position-sticky pt-5 ">
@@ -36,13 +36,13 @@ export default function NavbarLinks(props){
                 </Link>
               </li>
               <li className="nav-item mt-2">
-                <Link className="nav-link" to={"#"}>
+                <Link className="nav-link" to={"/reports"}>
                   <span data-feather=""></span>
                   Reports
                 </Link>
               </li>
               <li className="nav-item mt-2">
-                <Link className="nav-link" to={"./AddUser"}>
+                <Link className="nav-link" to={"/messages"}>
                   <span data-feather=""></span>
                   Add User
                 </Link>
@@ -54,14 +54,14 @@ export default function NavbarLinks(props){
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"#"}>
+                <Link className="nav-link" to={"/user-list"}>
                   <span data-feather=""></span>
                   Users
                 </Link>
               </li>
               <li className="nav-item my-4">
-                <button 
-                  className="nav-link btn" 
+                <button
+                  className="nav-link btn"
                   onClick={() =>{
                     localStorage.removeItem("user")
                     window.location.reload();
@@ -82,7 +82,7 @@ export default function NavbarLinks(props){
           </div>
         </nav>
       {/* </div> */}
-    
+
     </>
   )
 }

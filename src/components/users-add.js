@@ -1,24 +1,23 @@
 import React, { useState } from "react";
 // import PropertyDataService from '../services/property.service';
 
-export default function PropertyAdd(){
+export default function UserAdd(){
   const [submitted, setSubmitted] = useState(false);
-  // const [id, setID] = useState(null);
-  const [propName, setPropName] = useState();
-  const [location, setLocation] = useState();
-  const [accomType, setAccomType] = useState();
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [phone, setPhone] = useState();
   const [address, setAddress] = useState();
-  const [area, setArea] = useState();
+  const [role, setRole] = useState();
 
-  function saveProperty(){
+  function saveUser(){
     // var data = {
     //   name: propName,
-    //   location: location,
-    //   accomodation_typ: accomType,
+    //   email: location,
+    //   phone: accomType,
     //   address: address,
-    //   area: area,
+    //   role: area,
     // };
-    // PropertyDataService.create(data).then(response => {
+    // UserDataService.create(data).then(response => {
       
     //     setID(response.data.id);
     //     setPropName(response.data.title);
@@ -35,12 +34,12 @@ export default function PropertyAdd(){
     setSubmitted(true); //set after data is passed
   }
 
-  function newProperty(){
-    setPropName();
-    setLocation();
-    setAccomType();
+  function newUser(){
+    setName();
+    setEmail();
+    setPhone();
     setAddress();
-    setArea();
+    setRole();
 
     setSubmitted(false);
   }
@@ -51,59 +50,59 @@ export default function PropertyAdd(){
         {submitted ? (
           <div>
             <h4>You submitted successfully!</h4>
-            <button className="btn btn-success" onClick={newProperty}>
+            <button className="btn btn-success" onClick={newUser}>
               Add
             </button>
           </div>
         ) : (
           <div>
             <div className="form-group">
-              <label htmlFor="name">Property Name</label>
+              <label htmlFor="name">Name</label>
               <input
                 type="text"
                 className="form-control"
                 id="name"
                 required
-                value={propName}
+                value={name}
                 onChange={(e) =>{
-                  setPropName(e.target.value);
+                  setName(e.target.value);
                 }}
                 name="name"
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="location">Location</label>
+              <label htmlFor="email">E-mail</label>
               <input
                 type="text"
                 className="form-control"
-                id="location"
+                id="email"
                 required
-                value={location}
+                value={email}
                 onChange={(e) => {
-                  setLocation(e.target.value);
+                  setEmail(e.target.value);
                 }}
-                name="location"
+                name="email"
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="accomtype">Accomodation Type</label>
+              <label htmlFor="phone">Phone</label>
               <input
                 type="text"
                 className="form-control"
-                id="accomtype"
+                id="phone"
                 required
-                value={accomType}
+                value={phone}
                 onChange={(e) => {
-                  setAccomType(e.target.value);
+                  setPhone(e.target.value);
                 }}
-                name="accomtype"
+                name="phone"
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="address">Property Address</label>
+              <label htmlFor="address">Address</label>
               <input
                 type="text"
                 className="form-control"
@@ -117,22 +116,25 @@ export default function PropertyAdd(){
               />
             </div>
 
-            <div className="form-group">
-              <label htmlFor="area">Area</label>
-              <input
-                type="text"
-                className="form-control"
-                id="area"
-                required
-                value={area}
+            <div className="form-group input-group">
+              <label className="input-group-text" htmlFor="role">Role</label>
+              <select 
+                className="form-select form-control"
+                name="roles"
+                defaultvalue={role}
                 onChange={(e) => {
-                  setArea(e.target.value);
+                  setRole(e.target.value);
                 }}
-                name="area"
-              />
+                required
+              >
+                <option >Choose...</option>
+                <option value="clerk">clerk</option>
+                <option value="accounts">accounts</option>
+                <option value="admin">admin</option>
+              </select>
             </div>
 
-            <button onClick={saveProperty} className="btn btn-success">
+            <button onClick={saveUser} className="btn btn-success">
               Submit
             </button>
           </div>
